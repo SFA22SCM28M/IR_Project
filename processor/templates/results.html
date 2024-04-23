@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p>search results: </p>
+            <ul>
+                {% for i in range(K) %}
+                    <li>
+                        <a href={{urls[matches[i][0]]}}>{{corpus[matches[i][0]][:5]}}</a>
+                        <p>Description: </p>
+                        <p>{{corpus[matches[i][0]]}}...</p>
+                    </li>
+                {% endfor %}
+            </ul>
+    </body>
+
+</html>
